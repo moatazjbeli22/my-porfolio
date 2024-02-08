@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+html {
+  height:100%;
+  background-image: linear-gradient(to right , #944cb5 0%, #9d8b5f 100%);
+}
+
+nav {
+  max-width: 9600px;
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #da5e5e 25%, #cb1a1a 75%, rgba(234, 29, 29, 0) 100%);
+  height: 30px;
+  padding-bottom: 50px;
+  padding-top: 30px;
+
+}
+
+nav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 277px rgba(208, 159, 159, 0.1), inset 0 0 1px rgba(227, 16, 16, 0.6);
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 18px;
+  font-family: "Open Sans";
+  text-transform:uppercase;
+  color: rgba(122, 0, 0, 0.5);
+  font-size: 18px;
+  text-decoration: none;
+
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(172, 37, 37, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(0, 35, 122, 0.7);
+}
+
+
+#fb {
+
+    width: 20px;
+    margin-left: 900px;
+}
+
+#moataz {
+    border-radius: 30% 00% 90% 90%;    }
+
+
+    
+.flip-box {
+    background-color: transparent;
+   
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+  }
+  
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
